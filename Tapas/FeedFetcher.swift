@@ -16,7 +16,7 @@ class FeedFetcher {
         let config = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: config)
         let userPasswordString = "\(email):\(password)"
-        let base64EncodedCredential = self.base64Encode(userPasswordString)
+        let base64EncodedCredential = Base64.encode(userPasswordString)
         let authString = "Basic \(base64EncodedCredential!)"
         let request = NSMutableURLRequest(URL: url)
 
@@ -29,13 +29,5 @@ class FeedFetcher {
         }
         
         task!.resume()
-    }
-
-    func base64Encode(string: String) -> String? {
-        if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
-            return data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
-        } else {
-            return nil
-        }
     }
 }

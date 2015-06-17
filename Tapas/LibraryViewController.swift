@@ -7,17 +7,14 @@
 //
 
 import Cocoa
-import WebKit
-import AVKit
-import AVFoundation
 
 class LibraryViewController: NSSplitViewController {
 
-    var listViewController: ListViewController! {
+    var listViewController: ListViewController {
         return self.splitViewItems[0].viewController as! ListViewController
     }
 
-    var episodeViewController: EpisodeViewController! {
+    var episodeViewController: EpisodeViewController {
         return self.splitViewItems[1].viewController as! EpisodeViewController
     }
 

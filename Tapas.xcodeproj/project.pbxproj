@@ -21,6 +21,7 @@
 		7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */; };
 		7D9FC3741B315CD50077AAEB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FC3731B315CD50077AAEB /* ListViewController.swift */; };
 		7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD55BB91B30466100F780AA /* LoadingViewController.swift */; };
+		7DE860FD1B31AA5D0036FC0F /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE860FC1B31AA5D0036FC0F /* Base64.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcher.swift; sourceTree = "<group>"; };
 		7D9FC3731B315CD50077AAEB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7DD55BB91B30466100F780AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7DE860FC1B31AA5D0036FC0F /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				7D399AE51B2DD57D00422F17 /* AppDelegate.swift */,
 				7D399AE91B2DD57D00422F17 /* Assets.xcassets */,
 				7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */,
+				7DE860FC1B31AA5D0036FC0F /* Base64.swift */,
 				7D81A0E51B30A6DB0082A76C /* Episode.swift */,
 				7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */,
 				7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */,
@@ -277,6 +280,7 @@
 			files = (
 				7D399B501B2DED6400422F17 /* MainViewController.swift in Sources */,
 				7D068D131B30D59F00A6DE70 /* EpisodeViewController.swift in Sources */,
+				7DE860FD1B31AA5D0036FC0F /* Base64.swift in Sources */,
 				7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */,
 				7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */,
 				7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */,

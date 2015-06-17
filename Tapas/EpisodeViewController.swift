@@ -49,7 +49,7 @@ class EpisodeViewController: NSViewController {
 
     func displayVideo() {
         if let url = self.episode?.url, let email = self.email, let password = self.password {
-            let token = base64Encode("\(email):\(password)")
+            let token = Base64.encode("\(email):\(password)")
             let headers = ["Authorization": "Basic \(token!)"]
             let asset = AVURLAsset(URL: NSURL(string: url)!, options: ["AVURLAssetHTTPHeaderFieldsKey": headers])
             let item = AVPlayerItem(asset: asset)
@@ -58,14 +58,6 @@ class EpisodeViewController: NSViewController {
             self.playerView.player = player
 
             player.play()
-        }
-    }
-
-    func base64Encode(string: String) -> String? {
-        if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
-            return data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
-        } else {
-            return nil
         }
     }
 }
