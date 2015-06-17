@@ -19,6 +19,7 @@
 		7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E51B30A6DB0082A76C /* Episode.swift */; };
 		7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E71B30B9600082A76C /* FeedParser.swift */; };
 		7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */; };
+		7D9FC3741B315CD50077AAEB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FC3731B315CD50077AAEB /* ListViewController.swift */; };
 		7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD55BB91B30466100F780AA /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		7D81A0E51B30A6DB0082A76C /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		7D81A0E71B30B9600082A76C /* FeedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
 		7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcher.swift; sourceTree = "<group>"; };
+		7D9FC3731B315CD50077AAEB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7DD55BB91B30466100F780AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				7D81A0E71B30B9600082A76C /* FeedParser.swift */,
 				7D399AEE1B2DD57D00422F17 /* Info.plist */,
 				7D399B511B2DEEC600422F17 /* LibraryViewController.swift */,
+				7D9FC3731B315CD50077AAEB /* ListViewController.swift */,
 				7DD55BB91B30466100F780AA /* LoadingViewController.swift */,
 				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
 				7D399B4F1B2DED6400422F17 /* MainViewController.swift */,
@@ -280,6 +283,7 @@
 				7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */,
 				7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */,
 				7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */,
+				7D9FC3741B315CD50077AAEB /* ListViewController.swift in Sources */,
 				7D399B171B2DEA0A00422F17 /* AuthenticateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -503,27 +503,48 @@ DQ
             <point key="canvasLocation" x="77" y="1175"/>
         </scene>
         <!--Library View Controller-->
-        <scene sceneID="oP6-nS-Egy">
+        <scene sceneID="yNk-gd-3Mw">
             <objects>
-                <viewController storyboardIdentifier="library" id="O1z-3w-5cp" customClass="LibraryViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="MIZ-yd-bhq">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="280"/>
+                <splitViewController storyboardIdentifier="library" id="2GU-Bd-l9O" customClass="LibraryViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="BIu-eh-FK1"/>
+                        <splitViewItem id="qJ7-Nh-VPV"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="L4A-fq-zgN">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="qfw-Dw-usp" kind="relationship" relationship="splitItems" id="lhQ-o4-fx5"/>
+                        <segue destination="Tef-90-oh3" kind="relationship" relationship="splitItems" id="MCy-WS-hn9"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="RrG-mv-YjA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="1175"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="pFl-TF-qkb">
+            <objects>
+                <viewController id="qfw-Dw-usp" customClass="ListViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mAc-Mj-qXD">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kY-Et-c97">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" id="S36-YW-muB">
-                                    <rect key="frame" x="1" y="1" width="198" height="278"/>
+                                    <rect key="frame" x="1" y="1" width="448" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="NYJ-YN-gF5">
-                                            <rect key="frame" x="0.0" y="0.0" width="198" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="title" width="195" minWidth="10" maxWidth="3.4028234663852886e+38" id="JQv-RZ-esc">
+                                                <tableColumn identifier="title" width="445" minWidth="10" maxWidth="3.4028234663852886e+38" id="JQv-RZ-esc">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Title">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -539,18 +560,15 @@ DQ
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
-                                                <outlet property="dataSource" destination="O1z-3w-5cp" id="VR9-ya-u8X"/>
-                                                <outlet property="delegate" destination="O1z-3w-5cp" id="jah-Eg-oyp"/>
+                                                <outlet property="dataSource" destination="qfw-Dw-usp" id="idB-6W-UOF"/>
+                                                <outlet property="delegate" destination="qfw-Dw-usp" id="Q1b-th-2vH"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Tll-6b-oAO"/>
-                                </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="B2a-0Y-Lc0">
-                                    <rect key="frame" x="1" y="263" width="448" height="16"/>
+                                    <rect key="frame" x="1" y="283" width="448" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="90f-TX-26g">
@@ -558,42 +576,61 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3kY-Et-c97" secondAttribute="bottom" id="ARH-ww-TkS"/>
+                            <constraint firstItem="3kY-Et-c97" firstAttribute="top" secondItem="mAc-Mj-qXD" secondAttribute="top" id="Sqp-Gc-FqI"/>
+                            <constraint firstAttribute="trailing" secondItem="3kY-Et-c97" secondAttribute="trailing" id="bpT-NB-gtZ"/>
+                            <constraint firstItem="3kY-Et-c97" firstAttribute="leading" secondItem="mAc-Mj-qXD" secondAttribute="leading" id="o91-PZ-Vja"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NYJ-YN-gF5" id="5Ui-9s-XGi"/>
+                    </connections>
+                </viewController>
+                <customObject id="ldm-Od-cW9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="1673"/>
+        </scene>
+        <!--Episode View Controller-->
+        <scene sceneID="QGR-4o-qr9">
+            <objects>
+                <viewController id="Tef-90-oh3" customClass="EpisodeViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="ccJ-4c-kFb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="525"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
                             <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-6v-4TG">
-                                <rect key="frame" x="200" y="0.0" width="250" height="140"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="285"/>
                                 <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                                     <nil key="identifier"/>
                                 </webPreferences>
                             </webView>
                             <avPlayerView misplaced="YES" controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-Zp-3ga">
-                                <rect key="frame" x="200" y="140" width="250" height="140"/>
+                                <rect key="frame" x="0.0" y="285" width="450" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ChB-Zp-3ga" secondAttribute="height" multiplier="16:9" id="A7G-lY-TiN"/>
                                 </constraints>
                             </avPlayerView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ChB-Zp-3ga" secondAttribute="trailing" id="1LG-1a-NXu"/>
-                            <constraint firstItem="ChB-Zp-3ga" firstAttribute="leading" secondItem="3kY-Et-c97" secondAttribute="trailing" id="898-KA-0aM"/>
-                            <constraint firstItem="3kY-Et-c97" firstAttribute="top" secondItem="MIZ-yd-bhq" secondAttribute="top" id="IrK-oQ-A4f"/>
-                            <constraint firstAttribute="trailing" secondItem="ccf-6v-4TG" secondAttribute="trailing" id="RpP-0E-kVL"/>
-                            <constraint firstItem="3kY-Et-c97" firstAttribute="leading" secondItem="MIZ-yd-bhq" secondAttribute="leading" id="ScL-3y-qPw"/>
-                            <constraint firstItem="ccf-6v-4TG" firstAttribute="top" secondItem="ChB-Zp-3ga" secondAttribute="bottom" id="cVp-y2-KJV"/>
-                            <constraint firstItem="ChB-Zp-3ga" firstAttribute="top" secondItem="MIZ-yd-bhq" secondAttribute="top" id="cdy-Ow-ccX"/>
-                            <constraint firstItem="ccf-6v-4TG" firstAttribute="leading" secondItem="3kY-Et-c97" secondAttribute="trailing" id="dFY-Fy-id7"/>
-                            <constraint firstItem="ccf-6v-4TG" firstAttribute="leading" secondItem="3kY-Et-c97" secondAttribute="trailing" id="okb-Kb-Cys"/>
-                            <constraint firstAttribute="bottom" secondItem="ccf-6v-4TG" secondAttribute="bottom" id="uEA-bF-cxb"/>
-                            <constraint firstAttribute="bottom" secondItem="3kY-Et-c97" secondAttribute="bottom" id="vT2-5h-eQG"/>
+                            <constraint firstAttribute="trailing" secondItem="ChB-Zp-3ga" secondAttribute="trailing" id="CGP-5b-3ah"/>
+                            <constraint firstItem="ChB-Zp-3ga" firstAttribute="leading" secondItem="ccJ-4c-kFb" secondAttribute="leading" id="Ss8-30-v8m"/>
+                            <constraint firstItem="ccf-6v-4TG" firstAttribute="top" secondItem="ChB-Zp-3ga" secondAttribute="bottom" id="Sws-RT-5ng"/>
+                            <constraint firstItem="ccf-6v-4TG" firstAttribute="leading" secondItem="ccJ-4c-kFb" secondAttribute="leading" id="VSu-yZ-r1e"/>
+                            <constraint firstItem="ChB-Zp-3ga" firstAttribute="top" secondItem="ccJ-4c-kFb" secondAttribute="top" id="bIv-Pi-HiU"/>
+                            <constraint firstAttribute="trailing" secondItem="ccf-6v-4TG" secondAttribute="trailing" id="nIF-Hb-QNt"/>
+                            <constraint firstAttribute="bottom" secondItem="ccf-6v-4TG" secondAttribute="bottom" id="nN7-rk-Vq9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="playerView" destination="ChB-Zp-3ga" id="NbT-LY-St1"/>
-                        <outlet property="tableView" destination="NYJ-YN-gF5" id="eHx-je-ej8"/>
-                        <outlet property="webView" destination="ccf-6v-4TG" id="fbn-GG-5zs"/>
+                        <outlet property="playerView" destination="ChB-Zp-3ga" id="JHo-9r-plE"/>
+                        <outlet property="webView" destination="ccf-6v-4TG" id="Zn2-pA-8gy"/>
                     </connections>
                 </viewController>
-                <customObject id="THs-kg-K9I" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="w1w-Ne-sv1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="1175"/>
+            <point key="canvasLocation" x="868" y="1778.5"/>
         </scene>
     </scenes>
 </document>
