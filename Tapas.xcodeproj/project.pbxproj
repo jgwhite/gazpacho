@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D068D131B30D59F00A6DE70 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */; };
 		7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AE51B2DD57D00422F17 /* AppDelegate.swift */; };
-		7D399AE81B2DD57D00422F17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AE71B2DD57D00422F17 /* ViewController.swift */; };
 		7D399AEA1B2DD57D00422F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D399AE91B2DD57D00422F17 /* Assets.xcassets */; };
 		7D399AED1B2DD57D00422F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D399AEB1B2DD57D00422F17 /* Main.storyboard */; };
 		7D399AF81B2DD57E00422F17 /* TapasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AF71B2DD57E00422F17 /* TapasTests.swift */; };
 		7D399B031B2DD57E00422F17 /* TapasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B021B2DD57E00422F17 /* TapasUITests.swift */; };
+		7D399B171B2DEA0A00422F17 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */; };
+		7D399B501B2DED6400422F17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B4F1B2DED6400422F17 /* MainViewController.swift */; };
+		7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B511B2DEEC600422F17 /* LibraryViewController.swift */; };
+		7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E51B30A6DB0082A76C /* Episode.swift */; };
+		7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E71B30B9600082A76C /* FeedParser.swift */; };
+		7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */; };
+		7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD55BB91B30466100F780AA /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		7D399AE21B2DD57D00422F17 /* Tapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D399AE51B2DD57D00422F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D399AE71B2DD57D00422F17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D399AE91B2DD57D00422F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D399AEC1B2DD57D00422F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D399AEE1B2DD57D00422F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +52,13 @@
 		7D399AFE1B2DD57E00422F17 /* TapasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D399B021B2DD57E00422F17 /* TapasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapasUITests.swift; sourceTree = "<group>"; };
 		7D399B041B2DD57E00422F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
+		7D399B4F1B2DED6400422F17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7D399B511B2DEEC600422F17 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		7D81A0E51B30A6DB0082A76C /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		7D81A0E71B30B9600082A76C /* FeedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcher.swift; sourceTree = "<group>"; };
+		7DD55BB91B30466100F780AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				7D399AE51B2DD57D00422F17 /* AppDelegate.swift */,
-				7D399AE71B2DD57D00422F17 /* ViewController.swift */,
 				7D399AE91B2DD57D00422F17 /* Assets.xcassets */,
-				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
+				7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */,
+				7D81A0E51B30A6DB0082A76C /* Episode.swift */,
+				7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */,
+				7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */,
+				7D81A0E71B30B9600082A76C /* FeedParser.swift */,
 				7D399AEE1B2DD57D00422F17 /* Info.plist */,
+				7D399B511B2DEEC600422F17 /* LibraryViewController.swift */,
+				7DD55BB91B30466100F780AA /* LoadingViewController.swift */,
+				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
+				7D399B4F1B2DED6400422F17 /* MainViewController.swift */,
 			);
 			path = Tapas;
 			sourceTree = "<group>";
@@ -251,8 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D399AE81B2DD57D00422F17 /* ViewController.swift in Sources */,
+				7D399B501B2DED6400422F17 /* MainViewController.swift in Sources */,
+				7D068D131B30D59F00A6DE70 /* EpisodeViewController.swift in Sources */,
+				7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */,
+				7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */,
 				7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */,
+				7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */,
+				7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */,
+				7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */,
+				7D399B171B2DEA0A00422F17 /* AuthenticateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +502,7 @@
 				7D399B091B2DD57E00422F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D399B0A1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +511,7 @@
 				7D399B0C1B2DD57E00422F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D399B0D1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +520,7 @@
 				7D399B0F1B2DD57E00422F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
