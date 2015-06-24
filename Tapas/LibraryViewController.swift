@@ -36,21 +36,12 @@ class LibraryViewController: NSSplitViewController {
         }
     }
 
-    var email: String? {
+    var credentials: Credentials? {
         get {
-            return self.episodeViewController.email
+            return self.episodeViewController.credentials
         }
         set {
-            self.episodeViewController.email = newValue
-        }
-    }
-
-    var password: String? {
-        get {
-            return self.episodeViewController.password
-        }
-        set {
-            self.episodeViewController.password = newValue
+            self.episodeViewController.credentials = newValue
         }
     }
 

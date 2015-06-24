@@ -21,12 +21,7 @@ class EpisodeViewController: NSViewController {
             self.update()
         }
     }
-    var email: String? {
-        didSet {
-            self.update()
-        }
-    }
-    var password: String? {
+    var credentials: Credentials? {
         didSet {
             self.update()
         }
@@ -48,8 +43,8 @@ class EpisodeViewController: NSViewController {
     }
 
     func displayVideo() {
-        if let url = self.episode?.url, let email = self.email, let password = self.password {
-            let token = Base64.encode("\(email):\(password)")
+        if let url = self.episode?.url, let credentials = self.credentials {
+            let token = Base64.encode("\(credentials.username):\(credentials.password)")
             let headers = ["Authorization": "Basic \(token!)"]
             let asset = AVURLAsset(URL: NSURL(string: url)!, options: ["AVURLAssetHTTPHeaderFieldsKey": headers])
             let item = AVPlayerItem(asset: asset)

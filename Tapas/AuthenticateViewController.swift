@@ -18,10 +18,11 @@ class AuthenticateViewController: NSViewController {
     }
 
     @IBAction func authenticate(sender: AnyObject) {
-        let email = self.emailField.stringValue
-        let password = self.passwordField.stringValue
         if let parent = self.parentViewController as? MainViewController {
-            parent.authenticateWithEmail(email, password: password)
+            let email = self.emailField.stringValue
+            let password = self.passwordField.stringValue
+            let credentials = Credentials(username: email, password: password)
+            parent.loadLibrary(credentials)
         }
     }
 }

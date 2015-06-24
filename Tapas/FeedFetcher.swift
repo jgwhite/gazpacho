@@ -11,11 +11,11 @@ import Cocoa
 class FeedFetcher {
     let url = NSURL(string: "https://rubytapas.dpdcart.com/feed")!
 
-    func fetch(email email: String, password: String, then: (NSData?) -> Void) {
+    func fetch(credentials: Credentials, then: (NSData?) -> Void) {
         let url = self.url
         let config = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: config)
-        let userPasswordString = "\(email):\(password)"
+        let userPasswordString = "\(credentials.username):\(credentials.password)"
         let base64EncodedCredential = Base64.encode(userPasswordString)
         let authString = "Basic \(base64EncodedCredential!)"
         let request = NSMutableURLRequest(URL: url)

@@ -16,6 +16,7 @@
 		7D399B171B2DEA0A00422F17 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */; };
 		7D399B501B2DED6400422F17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B4F1B2DED6400422F17 /* MainViewController.swift */; };
 		7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B511B2DEEC600422F17 /* LibraryViewController.swift */; };
+		7D4AAD741B39846B00E02953 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4AAD731B39846B00E02953 /* Credentials.swift */; };
 		7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E51B30A6DB0082A76C /* Episode.swift */; };
 		7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E71B30B9600082A76C /* FeedParser.swift */; };
 		7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */; };
@@ -57,6 +58,7 @@
 		7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
 		7D399B4F1B2DED6400422F17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7D399B511B2DEEC600422F17 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		7D4AAD731B39846B00E02953 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		7D81A0E51B30A6DB0082A76C /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		7D81A0E71B30B9600082A76C /* FeedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
 		7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedFetcher.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				7DD55BB91B30466100F780AA /* LoadingViewController.swift */,
 				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
 				7D399B4F1B2DED6400422F17 /* MainViewController.swift */,
+				7D4AAD731B39846B00E02953 /* Credentials.swift */,
 			);
 			path = Tapas;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */,
 				7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */,
 				7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */,
+				7D4AAD741B39846B00E02953 /* Credentials.swift in Sources */,
 				7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */,
 				7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */,
 				7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */,
