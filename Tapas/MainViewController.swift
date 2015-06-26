@@ -25,6 +25,8 @@ class MainViewController: NSViewController {
         self.fetchEpisodes(credentials) {
             (episodes: [Episode]?) in
 
+            Credentials.store(credentials)
+
             dispatch_async(dispatch_get_main_queue()) {
                 self.show("library")
 

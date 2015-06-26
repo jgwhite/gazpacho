@@ -32,7 +32,7 @@ struct Credentials {
             var passwordData: UnsafeMutablePointer<Void> = nil
 
             SecKeychainFindInternetPassword(
-                nil,
+                nil, // keychain
                 UInt32(serverNameLength),
                 serverName,
                 0, // securityDomainLength
@@ -55,5 +55,34 @@ struct Credentials {
         }
         
         return nil
+    }
+
+    static func store(credentials: Credentials) {
+        let serverName = "rubytapas.dpdcart.com"
+        let serverNameLength = serverName.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+
+        let username = credentials.username
+        let usernameLength = username.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+
+        let password = credentials.password
+        let passwordLength = password.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+
+        SecKeychainAddInternetPassword(
+            nil, // keychain
+            UInt32(serverNameLength),
+            serverName,
+            0, // securityDomainLength
+            nil, // securityDomain
+            UInt32(usernameLength),
+            username,
+            0, // pathLength
+            nil, // path
+            0, // port
+            SecProtocolType(kSecProtocolTypeHTTPS),
+            SecAuthenticationType(kSecAuthenticationTypeDefault),
+            UInt32(passwordLength),
+            password,
+            nil
+        )
     }
 }
