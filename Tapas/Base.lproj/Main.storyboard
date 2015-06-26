@@ -64,7 +64,7 @@
                                     <items>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
-                                                <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="jTg-Dd-I3j"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -291,24 +291,23 @@
                             </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                <menu key="submenu" title="Window" systemMenu="window" autoenablesItems="NO" id="Td7-aD-5lo">
                                     <items>
                                         <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
                                             <connections>
                                                 <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Enter Full Screen" keyEquivalent="f" id="Ir4-35-6Sz">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                                <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="mJk-Wv-xXU"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
-                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem isSeparatorItem="YES" id="qcb-qJ-JpZ"/>
+                                        <menuItem title="Ruby Tapas" tag="42" keyEquivalent="1" id="7Pe-WJ-KWT">
                                             <connections>
-                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                                <action selector="showMainWindow:" target="Voe-Tx-rLC" id="qmg-Ez-deP"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -335,17 +334,20 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Tapas" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="-517"/>
+            <point key="canvasLocation" x="77" y="-535"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Tapas" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Ruby Tapas" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="ruby tapas main" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
                         <rect key="contentRect" x="548" y="404" width="1024" height="576"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="voD-Ia-gzO"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="4Jd-CZ-EEr" kind="relationship" relationship="window.shadowedContentViewController" id="QhH-O3-RNP"/>
