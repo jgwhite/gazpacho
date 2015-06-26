@@ -9,7 +9,7 @@
 import Cocoa
 
 class LibraryViewController: NSSplitViewController {
-
+    
     var listViewController: ListViewController {
         return self.splitViewItems[0].viewController as! ListViewController
     }

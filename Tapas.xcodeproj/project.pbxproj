@@ -119,6 +119,7 @@
 				7D399AE91B2DD57D00422F17 /* Assets.xcassets */,
 				7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */,
 				7DE860FC1B31AA5D0036FC0F /* Base64.swift */,
+				7D4AAD731B39846B00E02953 /* Credentials.swift */,
 				7D81A0E51B30A6DB0082A76C /* Episode.swift */,
 				7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */,
 				7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */,
@@ -129,7 +130,6 @@
 				7DD55BB91B30466100F780AA /* LoadingViewController.swift */,
 				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
 				7D399B4F1B2DED6400422F17 /* MainViewController.swift */,
-				7D4AAD731B39846B00E02953 /* Credentials.swift */,
 			);
 			path = Tapas;
 			sourceTree = "<group>";
