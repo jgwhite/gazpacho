@@ -18,9 +18,12 @@ class EpisodeViewController: NSViewController {
 
     var episode: Episode? {
         didSet {
-            self.update()
+            if episode != oldValue {
+                self.update()
+            }
         }
     }
+
     var credentials: Credentials? {
         didSet {
             self.update()

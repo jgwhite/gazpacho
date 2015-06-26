@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Episode {
+class Episode: Equatable {
     var title: String = ""
     var url: String?
     var link: String = ""
@@ -17,4 +17,9 @@ class Episode {
     var pubDate: String = ""
     var itunesSubtitle: String = ""
     var itunesImage: String = ""
+
+}
+
+func == (lhs: Episode, rhs: Episode) -> Bool {
+    return lhs.guid == rhs.guid
 }

@@ -10,31 +10,84 @@ import Cocoa
 
 class ListViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
 
+    @IBOutlet weak var searchField: NSSearchField!
     @IBOutlet weak var tableView: NSTableView!
+
+    var filter: String = "" {
+        didSet {
+            update()
+        }
+    }
 
     var episodes: [Episode]? {
         didSet {
-            self.tableView.reloadData()
+            update()
+        }
+    }
+
+    var results: [Episode] {
+        if let episodes = episodes {
+            if filter.isEmpty {
+                return episodes
+            } else {
+                return episodes.filter() {
+                    let normalTitle = $0.title.lowercaseString
+                    return normalTitle.rangeOfString(filter) != nil
+                }
+            }
+        } else {
+            return []
+        }
+    }
+
+    var libraryViewController: LibraryViewController? {
+        return parentViewController as? LibraryViewController
+    }
+
+    var episode: Episode? {
+        get {
+            return libraryViewController?.episode
+        }
+        set {
+            libraryViewController?.episode = newValue
+        }
+    }
+
+    var episodeIndex: Int? {
+        if let episode = episode {
+            return results.indexOf(episode)
+        } else {
+            return nil
+        }
+    }
+
+    @IBAction func updateSearch(sender: AnyObject) {
+        filter = searchField.stringValue.lowercaseString
+    }
+
+    func update() {
+        tableView.deselectAll(nil)
+        tableView.reloadData()
+
+        if let index = episodeIndex {
+            tableView.selectRowIndexes(NSIndexSet(index: index), byExtendingSelection: false)
         }
     }
 
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        if let count = self.episodes?.count {
-            return count
-        } else {
-            return 0
-        }
+        return results.count
     }
 
     func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
-        return self.episodes?[row].title
+        return results[row].title
     }
 
     func tableViewSelectionDidChange(notification: NSNotification) {
-        if let episode = self.episodes?[self.tableView.selectedRow],
-            let parent = self.parentViewController as? LibraryViewController {
-            parent.episode = episode
+        guard (0..<results.count).contains(tableView.selectedRow) else {
+            return
         }
+
+        episode = results[tableView.selectedRow]
     }
 
 }
