@@ -331,10 +331,10 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Tapas" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Ruby_Tapas" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="-535"/>
+            <point key="canvasLocation" x="77" y="-891"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -343,7 +343,7 @@
                     <window key="window" title="Ruby Tapas" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="ruby tapas main" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
-                        <rect key="contentRect" x="548" y="404" width="1024" height="576"/>
+                        <rect key="contentRect" x="548" y="404" width="1024" height="768"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="voD-Ia-gzO"/>
@@ -355,32 +355,32 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-98"/>
+            <point key="canvasLocation" x="75" y="-378"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="xkS-Ox-ueI">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="4Jd-CZ-EEr" customClass="MainViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController showSeguePresentationStyle="single" id="4Jd-CZ-EEr" customClass="MainViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="JVx-oe-e7J">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
                 <customObject id="NC6-R8-t8D" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="611"/>
+            <point key="canvasLocation" x="75" y="531"/>
         </scene>
         <!--Authenticate View Controller-->
         <scene sceneID="B3U-XW-enx">
             <objects>
-                <viewController storyboardIdentifier="authenticate" id="Shd-fe-RXu" customClass="AuthenticateViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="authenticate" id="Shd-fe-RXu" customClass="AuthenticateViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kfs-l9-hXi">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="280"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iYs-SB-Vdj">
                                 <rect key="frame" x="17" y="16" width="416" height="246"/>
-                                <view key="contentView" id="dep-BY-kXY">
+                                <view key="contentView" id="5ic-x6-reH">
                                     <rect key="frame" x="1" y="1" width="414" height="244"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -471,7 +471,7 @@ DQ
         <!--Loading View Controller-->
         <scene sceneID="OmZ-11-ymS">
             <objects>
-                <viewController storyboardIdentifier="loading" id="YL2-Mh-Fjn" customClass="LoadingViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loading" id="YL2-Mh-Fjn" customClass="LoadingViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="qiD-G9-BWm">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="280"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -506,7 +506,7 @@ DQ
         <!--Library View Controller-->
         <scene sceneID="yNk-gd-3Mw">
             <objects>
-                <splitViewController storyboardIdentifier="library" id="2GU-Bd-l9O" customClass="LibraryViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="library" id="2GU-Bd-l9O" customClass="LibraryViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="BIu-eh-FK1"/>
                         <splitViewItem id="qJ7-Nh-VPV"/>
@@ -528,28 +528,28 @@ DQ
         <!--List View Controller-->
         <scene sceneID="pFl-TF-qkb">
             <objects>
-                <viewController id="qfw-Dw-usp" customClass="ListViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qfw-Dw-usp" customClass="ListViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" horizontalHuggingPriority="1000" id="mAc-Mj-qXD">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="dIL-67-e5G">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="340"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                                 <subviews>
                                     <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Rsc-Gd-93N">
-                                        <rect key="frame" x="0.0" y="307" width="300" height="5"/>
+                                        <rect key="frame" x="0.0" y="367" width="300" height="5"/>
                                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <font key="titleFont" metaFont="system"/>
                                     </box>
                                     <scrollView focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kY-Et-c97">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="309"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="369"/>
                                         <clipView key="contentView" focusRingType="none" drawsBackground="NO" copiesOnScroll="NO" id="S36-YW-muB">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="309"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="369"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView focusRingType="none" appearanceType="aqua" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" id="NYJ-YN-gF5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="19"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="369"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -579,7 +579,7 @@ DQ
                                             <nil key="backgroundColor"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="B2a-0Y-Lc0">
-                                            <rect key="frame" x="0.0" y="293" width="300" height="16"/>
+                                            <rect key="frame" x="0.0" y="721" width="300" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="90f-TX-26g">
@@ -588,7 +588,7 @@ DQ
                                         </scroller>
                                     </scrollView>
                                     <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S1T-jv-fbX">
-                                        <rect key="frame" x="4" y="314" width="292" height="22"/>
+                                        <rect key="frame" x="4" y="374" width="292" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="teR-td-PaG"/>
                                         </constraints>
@@ -609,6 +609,7 @@ DQ
                                     <constraint firstItem="3kY-Et-c97" firstAttribute="top" secondItem="Rsc-Gd-93N" secondAttribute="bottom" id="QWV-IF-Mxc"/>
                                     <constraint firstItem="Rsc-Gd-93N" firstAttribute="leading" secondItem="dIL-67-e5G" secondAttribute="leading" id="Qfn-uO-zcs"/>
                                     <constraint firstItem="S1T-jv-fbX" firstAttribute="leading" secondItem="dIL-67-e5G" secondAttribute="leading" constant="4" id="Rzh-oT-nGw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="200" id="VLX-Xk-FtQ"/>
                                     <constraint firstItem="3kY-Et-c97" firstAttribute="leading" secondItem="dIL-67-e5G" secondAttribute="leading" id="cIU-z5-j2s"/>
                                     <constraint firstItem="S1T-jv-fbX" firstAttribute="top" secondItem="dIL-67-e5G" secondAttribute="top" constant="4" id="duj-WG-k8p"/>
                                     <constraint firstAttribute="bottom" secondItem="3kY-Et-c97" secondAttribute="bottom" id="mac-JT-LxL"/>
@@ -631,12 +632,12 @@ DQ
                 </viewController>
                 <customObject id="ldm-Od-cW9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="1686"/>
+            <point key="canvasLocation" x="387" y="1716"/>
         </scene>
         <!--Episode View Controller-->
         <scene sceneID="QGR-4o-qr9">
             <objects>
-                <viewController id="Tef-90-oh3" customClass="EpisodeViewController" customModule="Tapas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tef-90-oh3" customClass="EpisodeViewController" customModule="Ruby_Tapas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ccJ-4c-kFb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="525"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -671,7 +672,7 @@ DQ
                 </viewController>
                 <customObject id="w1w-Ne-sv1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="1778.5"/>
+            <point key="canvasLocation" x="830" y="1778.5"/>
         </scene>
     </scenes>
 </document>
