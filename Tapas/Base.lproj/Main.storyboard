@@ -18,7 +18,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Ruby Tapas" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Tapas" id="5kV-Vb-QxS">
+                                        <menuItem title="About Ruby Tapas" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -380,7 +380,7 @@
                         <subviews>
                             <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iYs-SB-Vdj">
                                 <rect key="frame" x="17" y="16" width="416" height="246"/>
-                                <view key="contentView" id="SJA-yR-hLu">
+                                <view key="contentView" id="dep-BY-kXY">
                                     <rect key="frame" x="1" y="1" width="414" height="244"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -549,7 +549,7 @@ DQ
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView focusRingType="none" appearanceType="aqua" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" id="NYJ-YN-gF5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="309"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -579,7 +579,7 @@ DQ
                                             <nil key="backgroundColor"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="B2a-0Y-Lc0">
-                                            <rect key="frame" x="0.0" y="324" width="490" height="16"/>
+                                            <rect key="frame" x="0.0" y="293" width="300" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="90f-TX-26g">

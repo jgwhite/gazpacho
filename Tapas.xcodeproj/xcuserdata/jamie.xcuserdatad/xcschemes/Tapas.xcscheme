@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-               BuildableName = "Tapas.app"
-               BlueprintName = "Tapas"
+               BuildableName = "Ruby Tapas.app"
+               BlueprintName = "Ruby Tapas"
                ReferencedContainer = "container:Tapas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Tapas.app"
-            BlueprintName = "Tapas"
+            BuildableName = "Ruby Tapas.app"
+            BlueprintName = "Ruby Tapas"
             ReferencedContainer = "container:Tapas.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Tapas.app"
-            BlueprintName = "Tapas"
+            BuildableName = "Ruby Tapas.app"
+            BlueprintName = "Ruby Tapas"
             ReferencedContainer = "container:Tapas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Tapas.app"
-            BlueprintName = "Tapas"
+            BuildableName = "Ruby Tapas.app"
+            BlueprintName = "Ruby Tapas"
             ReferencedContainer = "container:Tapas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

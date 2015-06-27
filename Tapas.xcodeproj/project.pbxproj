@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
-		7D399AE21B2DD57D00422F17 /* Tapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby Tapas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D399AE51B2DD57D00422F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D399AE91B2DD57D00422F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D399AEC1B2DD57D00422F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		7D399AE31B2DD57D00422F17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D399AE21B2DD57D00422F17 /* Tapas.app */,
+				7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */,
 				7D399AF31B2DD57E00422F17 /* TapasTests.xctest */,
 				7D399AFE1B2DD57E00422F17 /* TapasUITests.xctest */,
 			);
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D399AE11B2DD57D00422F17 /* Tapas */ = {
+		7D399AE11B2DD57D00422F17 /* Ruby Tapas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Tapas" */;
+			buildConfigurationList = 7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Ruby Tapas" */;
 			buildPhases = (
 				7D399ADE1B2DD57D00422F17 /* Sources */,
 				7D399ADF1B2DD57D00422F17 /* Frameworks */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = Tapas;
+			name = "Ruby Tapas";
 			productName = Tapas;
-			productReference = 7D399AE21B2DD57D00422F17 /* Tapas.app */;
+			productReference = 7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7D399AF21B2DD57E00422F17 /* TapasTests */ = {
@@ -244,7 +244,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D399AE11B2DD57D00422F17 /* Tapas */,
+				7D399AE11B2DD57D00422F17 /* Ruby Tapas */,
 				7D399AF21B2DD57E00422F17 /* TapasTests */,
 				7D399AFD1B2DD57E00422F17 /* TapasUITests */,
 			);
@@ -318,12 +318,12 @@
 /* Begin PBXTargetDependency section */
 		7D399AF51B2DD57E00422F17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D399AE11B2DD57D00422F17 /* Tapas */;
+			target = 7D399AE11B2DD57D00422F17 /* Ruby Tapas */;
 			targetProxy = 7D399AF41B2DD57E00422F17 /* PBXContainerItemProxy */;
 		};
 		7D399B001B2DD57E00422F17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D399AE11B2DD57D00422F17 /* Tapas */;
+			target = 7D399AE11B2DD57D00422F17 /* Ruby Tapas */;
 			targetProxy = 7D399AFF1B2DD57E00422F17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -510,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Tapas" */ = {
+		7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Ruby Tapas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D399B081B2DD57E00422F17 /* Debug */,
