@@ -11,37 +11,37 @@ import AVKit
 import AVFoundation
 import WebKit
 
-class EpisodeViewController: NSViewController {
-    
+class EpisodeViewController: NSViewController, WebPolicyDelegate {
+
     @IBOutlet weak var playerView: AVPlayerView!
     @IBOutlet weak var webView: WebView!
 
     var episode: Episode? {
         didSet {
             if episode != oldValue {
-                self.update()
+                update()
             }
         }
     }
 
     var credentials: Credentials? {
         didSet {
-            self.update()
+            update()
         }
     }
 
     override func viewDidLoad() {
-        self.update()
+        update()
     }
 
     func update() {
-        self.displayHTML()
-        self.displayVideo()
+        displayHTML()
+        displayVideo()
     }
 
     func displayHTML() {
         if let html = self.episode?.description {
-            self.webView.mainFrame.loadHTMLString(html, baseURL: NSURL(string: "http://www.rubytapas.com/")!)
+            webView.mainFrame.loadHTMLString(html, baseURL: NSURL(string: "http://www.rubytapas.com/")!)
         }
     }
 
@@ -53,9 +53,19 @@ class EpisodeViewController: NSViewController {
             let item = AVPlayerItem(asset: asset)
             let player = AVPlayer(playerItem: item)
 
-            self.playerView.player = player
+            playerView.player = player
 
             player.play()
+        }
+    }
+
+    override func webView(webView: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
+        let url = request.URL!
+
+        if url.absoluteString.hasPrefix("https://rubytapas.dpdcart.com/subscriber/download") {
+            NSWorkspace.sharedWorkspace().openURL(url)
+        } else {
+            listener.use()
         }
     }
 }

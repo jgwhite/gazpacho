@@ -25,15 +25,19 @@ class MainViewController: NSViewController {
         self.fetchEpisodes(credentials) {
             (episodes: [Episode]?) in
 
-            Credentials.store(credentials)
+            if episodes?.count > 0 {
+                Credentials.store(credentials)
 
-            dispatch_async(dispatch_get_main_queue()) {
-                self.show("library")
-
-                let vc = self.currentViewController as! LibraryViewController
-                vc.episodes = episodes
-                vc.credentials = credentials
+                self.show("library") {
+                    let vc = self.currentViewController as! LibraryViewController
+                    vc.episodes = episodes
+                    vc.credentials = credentials
+                }
+            } else {
+                print("Failed to fetch episodes, attempting re-auth")
+                self.show("authenticate")
             }
+
         }
     }
 
@@ -53,20 +57,30 @@ class MainViewController: NSViewController {
     }
 
     func show(name: String) {
-        if let newViewController = self.storyboard?.instantiateControllerWithIdentifier(name) as? NSViewController {
-            if let oldViewController = self.currentViewController {
-                oldViewController.removeFromParentViewController()
-                oldViewController.view.removeFromSuperview()
+        show(name, then: nil)
+    }
+
+    func show(name: String, then: (() -> Void)?) {
+        dispatch_async(dispatch_get_main_queue()) {
+            if let newViewController = self.storyboard?.instantiateControllerWithIdentifier(name) as? NSViewController {
+                if let oldViewController = self.currentViewController {
+                    oldViewController.removeFromParentViewController()
+                    oldViewController.view.removeFromSuperview()
+                }
+
+                let newView = newViewController.view
+
+                newView.frame = self.view.bounds
+                newView.autoresizingMask = NSAutoresizingMaskOptions([.ViewWidthSizable, .ViewHeightSizable])
+
+                self.currentViewController = newViewController
+                self.addChildViewController(newViewController)
+                self.view.addSubview(newView)
             }
 
-            let newView = newViewController.view
-
-            newView.frame = self.view.bounds
-            newView.autoresizingMask = NSAutoresizingMaskOptions([.ViewWidthSizable, .ViewHeightSizable])
-
-            self.currentViewController = newViewController
-            self.addChildViewController(newViewController)
-            self.view.addSubview(newView)
+            if let then = then {
+                then()
+            }
         }
     }
 }

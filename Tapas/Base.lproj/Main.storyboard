@@ -343,7 +343,7 @@
                     <window key="window" title="Ruby Tapas" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="ruby tapas main" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
-                        <rect key="contentRect" x="548" y="404" width="1024" height="768"/>
+                        <rect key="contentRect" x="0.0" y="0.0" width="1024" height="768"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="voD-Ia-gzO"/>
@@ -380,7 +380,7 @@
                         <subviews>
                             <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iYs-SB-Vdj">
                                 <rect key="frame" x="17" y="16" width="416" height="246"/>
-                                <view key="contentView" id="5ic-x6-reH">
+                                <view key="contentView" id="Xpy-B9-QOk">
                                     <rect key="frame" x="1" y="1" width="414" height="244"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -549,7 +549,7 @@ DQ
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView focusRingType="none" appearanceType="aqua" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" id="NYJ-YN-gF5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="369"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -579,7 +579,7 @@ DQ
                                             <nil key="backgroundColor"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="B2a-0Y-Lc0">
-                                            <rect key="frame" x="0.0" y="721" width="300" height="16"/>
+                                            <rect key="frame" x="0.0" y="353" width="300" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="90f-TX-26g">
@@ -642,11 +642,14 @@ DQ
                         <rect key="frame" x="0.0" y="0.0" width="450" height="525"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="ccf-6v-4TG">
+                            <webView maintainsBackForwardList="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-6v-4TG">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="272"/>
-                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                     <nil key="identifier"/>
                                 </webPreferences>
+                                <connections>
+                                    <outlet property="policyDelegate" destination="Tef-90-oh3" id="XCN-pA-wEs"/>
+                                </connections>
                             </webView>
                             <avPlayerView controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-Zp-3ga">
                                 <rect key="frame" x="0.0" y="272" width="450" height="253"/>

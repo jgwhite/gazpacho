@@ -11,7 +11,7 @@ import Cocoa
 struct FeedFetcher {
     static let URL = NSURL(string: "https://rubytapas.dpdcart.com/feed")!
 
-    static func fetch(credentials: Credentials, then: (NSData?) -> Void) {
+    static func fetch(credentials: Credentials, then: NSData? -> Void) {
         let config = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: config)
         let userPasswordString = "\(credentials.username):\(credentials.password)"
@@ -23,7 +23,6 @@ struct FeedFetcher {
 
         let task = session.dataTaskWithRequest(request) {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-
             then(data)
         }
         
