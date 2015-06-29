@@ -16,6 +16,9 @@ class EpisodeViewController: NSViewController, WebPolicyDelegate {
     @IBOutlet weak var playerView: AVPlayerView!
     @IBOutlet weak var webView: WebView!
 
+    let avdiStyles = "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://avdi.org/stylesheets/code.css\" />"
+    let ourStyles = "<style type=\"text/css\">body { font-family: sans-serif; font-size: 14px; line-height: 1.4 } p { max-width: 40em } pre { margin: 1.4em 0; border-left: 5px solid #f92661; padding-left: 10px }</style>"
+
     var episode: Episode? {
         didSet {
             if episode != oldValue {
@@ -41,7 +44,8 @@ class EpisodeViewController: NSViewController, WebPolicyDelegate {
 
     func displayHTML() {
         if let html = self.episode?.description {
-            webView.mainFrame.loadHTMLString(html, baseURL: NSURL(string: "http://www.rubytapas.com/")!)
+            let htmlWithCSS = avdiStyles + ourStyles + html
+            webView.mainFrame.loadHTMLString(htmlWithCSS, baseURL: NSURL(string: "http://www.rubytapas.com/")!)
         }
     }
 
