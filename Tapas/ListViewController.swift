@@ -25,19 +25,27 @@ class ListViewController: NSViewController, NSTableViewDelegate, NSTableViewData
         }
     }
 
+    private var _results: [Episode]?
+
     var results: [Episode] {
+        if let results = _results {
+            return results
+        }
+
         if let episodes = episodes {
             if filter.isEmpty {
-                return episodes
+                _results = episodes
             } else {
-                return episodes.filter() {
+                _results = episodes.filter() {
                     let normalTitle = $0.title.lowercaseString
                     return normalTitle.rangeOfString(filter) != nil
                 }
             }
         } else {
-            return []
+            _results = []
         }
+
+        return _results!
     }
 
     var libraryViewController: LibraryViewController? {
@@ -66,6 +74,8 @@ class ListViewController: NSViewController, NSTableViewDelegate, NSTableViewData
     }
 
     func update() {
+        _results = nil
+
         tableView.deselectAll(nil)
         tableView.reloadData()
 
