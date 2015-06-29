@@ -12,11 +12,13 @@ struct Credentials {
     let username: String
     let password: String
 
+    static let server = "rubytapas.dpdcart.com"
+
     static func fetch() -> Credentials? {
         let query = [
             (kSecReturnAttributes as String) : kCFBooleanTrue,
             (kSecClass as String)            : kSecClassInternetPassword,
-            (kSecAttrServer as String)       : "rubytapas.dpdcart.com"
+            (kSecAttrServer as String)       : Credentials.server
         ]
 
         var itemRef: Unmanaged<AnyObject>?
@@ -25,7 +27,7 @@ struct Credentials {
         if let username = itemRef?.takeRetainedValue()["acct"] as? String {
             let usernameLength = username.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
 
-            let serverName = "rubytapas.dpdcart.com"
+            let serverName = Credentials.server
             let serverNameLength = serverName.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
 
             var passwordLength: UInt32 = 0
@@ -58,7 +60,9 @@ struct Credentials {
     }
 
     static func store(credentials: Credentials) {
-        let serverName = "rubytapas.dpdcart.com"
+        Credentials.deleteAll()
+
+        let serverName = Credentials.server
         let serverNameLength = serverName.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
 
         let username = credentials.username
@@ -84,5 +88,16 @@ struct Credentials {
             password,
             nil
         )
+    }
+
+    static func deleteAll() {
+        let query = [
+            (kSecClass as String): kSecClassInternetPassword,
+            (kSecAttrServer as String): Credentials.server
+        ]
+
+        let result = SecItemDelete(query)
+
+        print(SecCopyErrorMessageString(result, nil))
     }
 }
