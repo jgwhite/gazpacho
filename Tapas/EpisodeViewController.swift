@@ -64,12 +64,33 @@ class EpisodeViewController: NSViewController, WebPolicyDelegate {
     }
 
     override func webView(webView: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
-        let url = request.URL!
+        if let url = request.URL {
+            let urlString = url.absoluteString
 
-        if url.absoluteString.hasPrefix("https://rubytapas.dpdcart.com/subscriber/download") {
-            NSWorkspace.sharedWorkspace().openURL(url)
-        } else {
-            listener.use()
+            if !blacklisted(urlString) && whitelisted(urlString) {
+                listener.use()
+            } else {
+                NSWorkspace.sharedWorkspace().openURL(url)
+            }
         }
     }
+
+
+    private func blacklisted(str: String) -> Bool {
+        return BLACKLIST.contains() { str.hasPrefix($0) }
+    }
+
+    private func whitelisted(str: String) -> Bool {
+        return WHITELIST.contains() { str.hasPrefix($0) }
+    }
+
+    private let WHITELIST = [
+        "https://rubytapas.dpdcart.com",
+        "http://www.rubytapas.com/",
+        "http://avdi.org"
+    ]
+
+    private let BLACKLIST = [
+        "https://rubytapas.dpdcart.com/subscriber/download"
+    ]
 }
