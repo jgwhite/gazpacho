@@ -11,12 +11,28 @@ import Cocoa
 class MainViewController: NSViewController {
     var currentViewController: NSViewController?
 
+    var signOutMenuItem: NSMenuItem? {
+        let app = NSApplication.sharedApplication()
+        let menu = app.menu
+        return menu?.itemAtIndex(1)?.submenu?.itemAtIndex(2)
+    }
+
     override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if let delegate = NSApplication.sharedApplication().delegate as? AppDelegate {
+            delegate.mainViewController = self
+        }
+        
         if let credentials = Credentials.fetch() {
             self.loadLibrary(credentials)
         } else {
-            self.show("authenticate")
+            self.showAuthenticate()
         }
+    }
+
+    func signOut() {
+        self.showAuthenticate()
     }
 
     func loadLibrary(credentials: Credentials) {
@@ -27,6 +43,7 @@ class MainViewController: NSViewController {
 
             if episodes?.count > 0 {
                 Credentials.store(credentials)
+                self.signOutMenuItem?.enabled = true
 
                 self.show("library") {
                     let vc = self.currentViewController as! LibraryViewController
@@ -35,10 +52,16 @@ class MainViewController: NSViewController {
                 }
             } else {
                 print("Failed to fetch episodes, attempting re-auth")
-                self.show("authenticate")
+                self.showAuthenticate()
             }
 
         }
+    }
+
+    func showAuthenticate() {
+        Credentials.deleteAll()
+        self.show("authenticate")
+        self.signOutMenuItem?.enabled = false
     }
 
     func fetchEpisodes(credentials: Credentials, then: [Episode]? -> Void) {

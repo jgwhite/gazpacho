@@ -96,8 +96,6 @@ struct Credentials {
             (kSecAttrServer as String): Credentials.server
         ]
 
-        let result = SecItemDelete(query)
-
-        print(SecCopyErrorMessageString(result, nil))
+        SecItemDelete(query)
     }
 }
