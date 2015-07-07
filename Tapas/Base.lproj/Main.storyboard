@@ -386,7 +386,7 @@
                         <subviews>
                             <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iYs-SB-Vdj">
                                 <rect key="frame" x="17" y="16" width="416" height="246"/>
-                                <view key="contentView" id="nUg-Gp-7JE">
+                                <view key="contentView" id="jVw-SD-Qt7">
                                     <rect key="frame" x="1" y="1" width="414" height="244"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
