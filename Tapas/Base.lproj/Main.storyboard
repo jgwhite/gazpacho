@@ -321,11 +321,12 @@
                             </menuItem>
                             <menuItem title="Help" id="wpr-3q-Mcd">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                <menu key="submenu" title="Help" systemMenu="help" autoenablesItems="NO" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Tapas Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Visit RubyTapas.com" id="Wmu-N9-8qJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <action selector="openWebsite:" target="Voe-Tx-rLC" id="XzX-7Z-c4c"/>
                                             </connections>
                                         </menuItem>
                                     </items>

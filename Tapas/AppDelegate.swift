@@ -27,13 +27,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    @IBAction func openWebsite(send: AnyObject) {
+        let url = NSURL(string: "http://www.rubytapas.com/")!
+        NSWorkspace.sharedWorkspace().openURL(url)
+    }
+
     func showMainWindow() {
         mainWindow?.makeKeyAndOrderFront(self)
     }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         mainWindow?.excludedFromWindowsMenu = true
-        print(mainViewController)
     }
 
     func applicationShouldHandleReopen(app: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
