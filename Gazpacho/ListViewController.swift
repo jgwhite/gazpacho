@@ -100,4 +100,8 @@ class ListViewController: NSViewController, NSTableViewDelegate, NSTableViewData
         episode = results[tableView.selectedRow]
     }
 
+    func tableView(tableView: NSTableView, shouldEditTableColumn tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return false
+    }
+
 }
