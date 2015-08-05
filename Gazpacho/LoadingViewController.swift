@@ -1,6 +1,6 @@
 //
 //  LoadingViewController.swift
-//  Tapas
+//  Gazpacho
 //
 //  Created by Jamie White on 16/06/2015.
 //  Copyright © 2015 Jamie White. All rights reserved.

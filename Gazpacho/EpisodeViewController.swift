@@ -1,6 +1,6 @@
 //
 //  EpisodeViewController.swift
-//  Tapas
+//  Gazpacho
 //
 //  Created by Jamie White on 16/06/2015.
 //  Copyright © 2015 Jamie White. All rights reserved.
@@ -63,7 +63,7 @@ class EpisodeViewController: NSViewController, WebPolicyDelegate {
         }
     }
 
-    override func webView(webView: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
+    func webView(webView: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
         if let url = request.URL {
             let urlString = url.absoluteString
 

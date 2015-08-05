@@ -15,37 +15,27 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-               BuildableName = "Ruby Tapas.app"
-               BlueprintName = "Ruby Tapas"
-               ReferencedContainer = "container:Tapas.xcodeproj">
+               BuildableName = "Gazpacho.app"
+               BlueprintName = "Gazpacho"
+               ReferencedContainer = "container:Gazpacho.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D399AF21B2DD57E00422F17"
-               BuildableName = "TapasTests.xctest"
-               BlueprintName = "TapasTests"
-               ReferencedContainer = "container:Tapas.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D399AFD1B2DD57E00422F17"
-               BuildableName = "TapasUITests.xctest"
-               BlueprintName = "TapasUITests"
-               ReferencedContainer = "container:Tapas.xcodeproj">
+               BuildableName = "Gazpacho.xctest"
+               BlueprintName = "GazpachoTests"
+               ReferencedContainer = "container:Gazpacho.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,20 +43,20 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Ruby Tapas.app"
-            BlueprintName = "Ruby Tapas"
-            ReferencedContainer = "container:Tapas.xcodeproj">
+            BuildableName = "Gazpacho.app"
+            BlueprintName = "Gazpacho"
+            ReferencedContainer = "container:Gazpacho.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -76,28 +66,28 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Ruby Tapas.app"
-            BlueprintName = "Ruby Tapas"
-            ReferencedContainer = "container:Tapas.xcodeproj">
+            BuildableName = "Gazpacho.app"
+            BlueprintName = "Gazpacho"
+            ReferencedContainer = "container:Gazpacho.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7D399AE11B2DD57D00422F17"
-            BuildableName = "Ruby Tapas.app"
-            BlueprintName = "Ruby Tapas"
-            ReferencedContainer = "container:Tapas.xcodeproj">
+            BuildableName = "Gazpacho.app"
+            BlueprintName = "Gazpacho"
+            ReferencedContainer = "container:Gazpacho.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

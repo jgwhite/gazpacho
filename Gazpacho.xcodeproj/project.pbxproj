@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7D068D131B30D59F00A6DE70 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */; };
+		7D25E7B01B7167E900452E84 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4AAD731B39846B00E02953 /* Credentials.swift */; };
 		7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AE51B2DD57D00422F17 /* AppDelegate.swift */; };
 		7D399AEA1B2DD57D00422F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D399AE91B2DD57D00422F17 /* Assets.xcassets */; };
 		7D399AED1B2DD57D00422F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D399AEB1B2DD57D00422F17 /* Main.storyboard */; };
-		7D399AF81B2DD57E00422F17 /* TapasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AF71B2DD57E00422F17 /* TapasTests.swift */; };
-		7D399B031B2DD57E00422F17 /* TapasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B021B2DD57E00422F17 /* TapasUITests.swift */; };
 		7D399B171B2DEA0A00422F17 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */; };
 		7D399B501B2DED6400422F17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B4F1B2DED6400422F17 /* MainViewController.swift */; };
 		7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399B511B2DEEC600422F17 /* LibraryViewController.swift */; };
-		7D4AAD741B39846B00E02953 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4AAD731B39846B00E02953 /* Credentials.swift */; };
 		7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E51B30A6DB0082A76C /* Episode.swift */; };
 		7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E71B30B9600082A76C /* FeedParser.swift */; };
 		7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A0E91B30BB1B0082A76C /* FeedFetcher.swift */; };
@@ -25,36 +23,13 @@
 		7DE860FD1B31AA5D0036FC0F /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE860FC1B31AA5D0036FC0F /* Base64.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7D399AF41B2DD57E00422F17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D399ADA1B2DD57D00422F17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D399AE11B2DD57D00422F17;
-			remoteInfo = Tapas;
-		};
-		7D399AFF1B2DD57E00422F17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D399ADA1B2DD57D00422F17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D399AE11B2DD57D00422F17;
-			remoteInfo = Tapas;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
-		7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby Tapas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D399AE21B2DD57D00422F17 /* Gazpacho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gazpacho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D399AE51B2DD57D00422F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D399AE91B2DD57D00422F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D399AEC1B2DD57D00422F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D399AEE1B2DD57D00422F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D399AF31B2DD57E00422F17 /* TapasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D399AF71B2DD57E00422F17 /* TapasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapasTests.swift; sourceTree = "<group>"; };
-		7D399AF91B2DD57E00422F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D399AFE1B2DD57E00422F17 /* TapasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D399B021B2DD57E00422F17 /* TapasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapasUITests.swift; sourceTree = "<group>"; };
-		7D399B041B2DD57E00422F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D399B161B2DEA0A00422F17 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
 		7D399B4F1B2DED6400422F17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7D399B511B2DEEC600422F17 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
@@ -75,29 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D399AF01B2DD57E00422F17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D399AFB1B2DD57E00422F17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7D399AD91B2DD57D00422F17 = {
 			isa = PBXGroup;
 			children = (
-				7D399AE41B2DD57D00422F17 /* Tapas */,
-				7D399AF61B2DD57E00422F17 /* TapasTests */,
-				7D399B011B2DD57E00422F17 /* TapasUITests */,
+				7D399AE41B2DD57D00422F17 /* Gazpacho */,
 				7D399AE31B2DD57D00422F17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,14 +64,12 @@
 		7D399AE31B2DD57D00422F17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */,
-				7D399AF31B2DD57E00422F17 /* TapasTests.xctest */,
-				7D399AFE1B2DD57E00422F17 /* TapasUITests.xctest */,
+				7D399AE21B2DD57D00422F17 /* Gazpacho.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D399AE41B2DD57D00422F17 /* Tapas */ = {
+		7D399AE41B2DD57D00422F17 /* Gazpacho */ = {
 			isa = PBXGroup;
 			children = (
 				7D399AE51B2DD57D00422F17 /* AppDelegate.swift */,
@@ -131,33 +88,15 @@
 				7D399AEB1B2DD57D00422F17 /* Main.storyboard */,
 				7D399B4F1B2DED6400422F17 /* MainViewController.swift */,
 			);
-			path = Tapas;
-			sourceTree = "<group>";
-		};
-		7D399AF61B2DD57E00422F17 /* TapasTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D399AF71B2DD57E00422F17 /* TapasTests.swift */,
-				7D399AF91B2DD57E00422F17 /* Info.plist */,
-			);
-			path = TapasTests;
-			sourceTree = "<group>";
-		};
-		7D399B011B2DD57E00422F17 /* TapasUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7D399B021B2DD57E00422F17 /* TapasUITests.swift */,
-				7D399B041B2DD57E00422F17 /* Info.plist */,
-			);
-			path = TapasUITests;
+			path = Gazpacho;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D399AE11B2DD57D00422F17 /* Ruby Tapas */ = {
+		7D399AE11B2DD57D00422F17 /* Gazpacho */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Ruby Tapas" */;
+			buildConfigurationList = 7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Gazpacho" */;
 			buildPhases = (
 				7D399ADE1B2DD57D00422F17 /* Sources */,
 				7D399ADF1B2DD57D00422F17 /* Frameworks */,
@@ -167,46 +106,10 @@
 			);
 			dependencies = (
 			);
-			name = "Ruby Tapas";
-			productName = Tapas;
-			productReference = 7D399AE21B2DD57D00422F17 /* Ruby Tapas.app */;
+			name = Gazpacho;
+			productName = Gazpacho;
+			productReference = 7D399AE21B2DD57D00422F17 /* Gazpacho.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7D399AF21B2DD57E00422F17 /* TapasTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D399B0A1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasTests" */;
-			buildPhases = (
-				7D399AEF1B2DD57E00422F17 /* Sources */,
-				7D399AF01B2DD57E00422F17 /* Frameworks */,
-				7D399AF11B2DD57E00422F17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D399AF51B2DD57E00422F17 /* PBXTargetDependency */,
-			);
-			name = TapasTests;
-			productName = TapasTests;
-			productReference = 7D399AF31B2DD57E00422F17 /* TapasTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7D399AFD1B2DD57E00422F17 /* TapasUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D399B0D1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasUITests" */;
-			buildPhases = (
-				7D399AFA1B2DD57E00422F17 /* Sources */,
-				7D399AFB1B2DD57E00422F17 /* Frameworks */,
-				7D399AFC1B2DD57E00422F17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D399B001B2DD57E00422F17 /* PBXTargetDependency */,
-			);
-			name = TapasUITests;
-			productName = TapasUITests;
-			productReference = 7D399AFE1B2DD57E00422F17 /* TapasUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,17 +124,9 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = EZ7M94M765;
 					};
-					7D399AF21B2DD57E00422F17 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 7D399AE11B2DD57D00422F17;
-					};
-					7D399AFD1B2DD57E00422F17 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 7D399AE11B2DD57D00422F17;
-					};
 				};
 			};
-			buildConfigurationList = 7D399ADD1B2DD57D00422F17 /* Build configuration list for PBXProject "Tapas" */;
+			buildConfigurationList = 7D399ADD1B2DD57D00422F17 /* Build configuration list for PBXProject "Gazpacho" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,9 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D399AE11B2DD57D00422F17 /* Ruby Tapas */,
-				7D399AF21B2DD57E00422F17 /* TapasTests */,
-				7D399AFD1B2DD57E00422F17 /* TapasUITests */,
+				7D399AE11B2DD57D00422F17 /* Gazpacho */,
 			);
 		};
 /* End PBXProject section */
@@ -258,20 +151,6 @@
 			files = (
 				7D399AEA1B2DD57D00422F17 /* Assets.xcassets in Resources */,
 				7D399AED1B2DD57D00422F17 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D399AF11B2DD57E00422F17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D399AFC1B2DD57E00422F17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +167,7 @@
 				7D81A0EA1B30BB1B0082A76C /* FeedFetcher.swift in Sources */,
 				7D81A0E61B30A6DB0082A76C /* Episode.swift in Sources */,
 				7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */,
-				7D4AAD741B39846B00E02953 /* Credentials.swift in Sources */,
+				7D25E7B01B7167E900452E84 /* Credentials.swift in Sources */,
 				7D81A0E81B30B9600082A76C /* FeedParser.swift in Sources */,
 				7DD55BBA1B30466100F780AA /* LoadingViewController.swift in Sources */,
 				7D399B521B2DEEC600422F17 /* LibraryViewController.swift in Sources */,
@@ -297,36 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D399AEF1B2DD57E00422F17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D399AF81B2DD57E00422F17 /* TapasTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D399AFA1B2DD57E00422F17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D399B031B2DD57E00422F17 /* TapasUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7D399AF51B2DD57E00422F17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D399AE11B2DD57D00422F17 /* Ruby Tapas */;
-			targetProxy = 7D399AF41B2DD57E00422F17 /* PBXContainerItemProxy */;
-		};
-		7D399B001B2DD57E00422F17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D399AE11B2DD57D00422F17 /* Ruby Tapas */;
-			targetProxy = 7D399AFF1B2DD57E00422F17 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7D399AEB1B2DD57D00422F17 /* Main.storyboard */ = {
@@ -426,10 +276,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tapas/Info.plist;
+				INFOPLIST_FILE = Gazpacho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.Tapas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.Gazpacho;
+				PRODUCT_NAME = Gazpacho;
 			};
 			name = Debug;
 		};
@@ -439,69 +289,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tapas/Info.plist;
+				INFOPLIST_FILE = Gazpacho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.Tapas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		7D399B0B1B2DD57E00422F17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TapasTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.TapasTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tapas.app/Contents/MacOS/Tapas";
-			};
-			name = Debug;
-		};
-		7D399B0C1B2DD57E00422F17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TapasTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.TapasTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tapas.app/Contents/MacOS/Tapas";
-			};
-			name = Release;
-		};
-		7D399B0E1B2DD57E00422F17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TapasUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.TapasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Tapas;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		7D399B0F1B2DD57E00422F17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TapasUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.TapasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Tapas;
-				USES_XCTRUNNER = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jgwhite.Gazpacho;
+				PRODUCT_NAME = Gazpacho;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D399ADD1B2DD57D00422F17 /* Build configuration list for PBXProject "Tapas" */ = {
+		7D399ADD1B2DD57D00422F17 /* Build configuration list for PBXProject "Gazpacho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D399B051B2DD57E00422F17 /* Debug */,
@@ -510,29 +308,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Ruby Tapas" */ = {
+		7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Gazpacho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D399B081B2DD57E00422F17 /* Debug */,
 				7D399B091B2DD57E00422F17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D399B0A1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D399B0B1B2DD57E00422F17 /* Debug */,
-				7D399B0C1B2DD57E00422F17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D399B0D1B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "TapasUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D399B0E1B2DD57E00422F17 /* Debug */,
-				7D399B0F1B2DD57E00422F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

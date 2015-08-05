@@ -1,6 +1,6 @@
 //
 //  Credentials.swift
-//  Tapas
+//  Gazpacho
 //
 //  Created by Jamie White on 23/06/2015.
 //  Copyright © 2015 Jamie White. All rights reserved.
@@ -22,9 +22,13 @@ struct Credentials {
         ]
 
         var itemRef: Unmanaged<AnyObject>?
-        SecItemCopyMatching(query, &itemRef)
 
-        if let username = itemRef?.takeRetainedValue()["acct"] as? String {
+        withUnsafeMutablePointer(&itemRef) {
+            SecItemCopyMatching(query, UnsafeMutablePointer($0))
+        }
+
+        if let ref = itemRef?.takeRetainedValue() as? [String: AnyObject],
+            let username = ref["acct"] as? String {
             let usernameLength = username.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
 
             let serverName = Credentials.server
@@ -44,8 +48,8 @@ struct Credentials {
                 0, // pathLength
                 nil, // path
                 0, // port
-                SecProtocolType(kSecProtocolTypeHTTPS),
-                SecAuthenticationType(kSecAuthenticationTypeDefault),
+                .HTTPS,
+                .Default,
                 &passwordLength,
                 &passwordData,
                 nil // itemRef
@@ -82,8 +86,8 @@ struct Credentials {
             0, // pathLength
             nil, // path
             0, // port
-            SecProtocolType(kSecProtocolTypeHTTPS),
-            SecAuthenticationType(kSecAuthenticationTypeDefault),
+            .HTTPS,
+            .Default,
             UInt32(passwordLength),
             password,
             nil

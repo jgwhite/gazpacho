@@ -1,4 +1,4 @@
-# Tapas
+# Gazpacho
 
 OS X native client for viewing the [Ruby Tapas](http://www.rubytapas.com/) catalogue.
 
