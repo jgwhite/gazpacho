@@ -21,14 +21,14 @@ struct Credentials {
             (kSecAttrServer as String)       : Credentials.server
         ]
 
-        var itemRef: Unmanaged<AnyObject>?
+        var itemRef: AnyObject?
 
-        withUnsafeMutablePointer(&itemRef) {
-            SecItemCopyMatching(query, UnsafeMutablePointer($0))
-        }
+        SecItemCopyMatching(query, &itemRef)
 
-        if let ref = itemRef?.takeRetainedValue() as? [String: AnyObject],
-            let username = ref["acct"] as? String {
+        if let
+            dict = itemRef as? [String: AnyObject],
+            username = dict["acct"] as? String
+        {
             let usernameLength = username.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
 
             let serverName = Credentials.server
