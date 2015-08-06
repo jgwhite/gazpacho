@@ -326,7 +326,13 @@
                                         <menuItem title="Visit RubyTapas.com" id="Wmu-N9-8qJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="openWebsite:" target="Voe-Tx-rLC" id="No6-1T-QqQ"/>
+                                                <action selector="openRubyTapas:" target="Voe-Tx-rLC" id="MwL-va-ZhG"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Report an Issue" id="wji-zU-NES">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openIssues:" target="Voe-Tx-rLC" id="L3z-T2-p3e"/>
                                             </connections>
                                         </menuItem>
                                     </items>

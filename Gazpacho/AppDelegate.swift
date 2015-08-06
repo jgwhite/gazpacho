@@ -27,8 +27,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    @IBAction func openWebsite(send: AnyObject) {
+    @IBAction func openRubyTapas(sender: AnyObject) {
         let url = NSURL(string: "http://www.rubytapas.com/")!
+        NSWorkspace.sharedWorkspace().openURL(url)
+    }
+
+    @IBAction func openIssues(sender: AnyObject) {
+        let url = NSURL(string: "https://github.com/jgwhite/gazpacho/issues")!
         NSWorkspace.sharedWorkspace().openURL(url)
     }
 
