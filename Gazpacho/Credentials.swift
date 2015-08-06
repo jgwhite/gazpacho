@@ -55,7 +55,9 @@ struct Credentials {
                 nil // itemRef
             )
 
-            if let password = NSString(bytes: passwordData, length: Int(passwordLength), encoding: NSUTF8StringEncoding) as? String {
+            if let
+                password = NSString(bytes: passwordData, length: Int(passwordLength), encoding: NSUTF8StringEncoding) as? String
+            {
                 return Credentials(username: username, password: password)
             }
         }
