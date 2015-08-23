@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BDD9074F-07D5-4E18-BFE7-A673754220B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gazpacho</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2012844B771A13097D630310FBABCA6DEC8C6EBE</key>
+		<string>github.com:jgwhite/gazpacho</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gazpacho.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2012844B771A13097D630310FBABCA6DEC8C6EBE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jgwhite/gazpacho</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2012844B771A13097D630310FBABCA6DEC8C6EBE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2012844B771A13097D630310FBABCA6DEC8C6EBE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gazpacho</string>
+		</dict>
+	</array>
+</dict>
+</plist>

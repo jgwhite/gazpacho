@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EEE1B53CB833F6C86BD7C7F /* libPods-Gazpacho.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C19A183EB8D796590653D879 /* libPods-Gazpacho.a */; };
 		7D068D131B30D59F00A6DE70 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D068D121B30D59F00A6DE70 /* EpisodeViewController.swift */; };
 		7D25E7B01B7167E900452E84 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4AAD731B39846B00E02953 /* Credentials.swift */; };
 		7D399AE61B2DD57D00422F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D399AE51B2DD57D00422F17 /* AppDelegate.swift */; };
@@ -41,6 +42,9 @@
 		7D9FC3731B315CD50077AAEB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7DD55BB91B30466100F780AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		7DE860FC1B31AA5D0036FC0F /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
+		C19A183EB8D796590653D879 /* libPods-Gazpacho.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gazpacho.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D633F695A8757198D561E2BC /* Pods-Gazpacho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gazpacho.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gazpacho/Pods-Gazpacho.release.xcconfig"; sourceTree = "<group>"; };
+		E7397CF3B59EBF1B27EE1125 /* Pods-Gazpacho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gazpacho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gazpacho/Pods-Gazpacho.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEE1B53CB833F6C86BD7C7F /* libPods-Gazpacho.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BEAEB279BD74D67D78594A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7397CF3B59EBF1B27EE1125 /* Pods-Gazpacho.debug.xcconfig */,
+				D633F695A8757198D561E2BC /* Pods-Gazpacho.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D399AD91B2DD57D00422F17 = {
 			isa = PBXGroup;
 			children = (
 				7D399AE41B2DD57D00422F17 /* Gazpacho */,
 				7D399AE31B2DD57D00422F17 /* Products */,
+				5BEAEB279BD74D67D78594A2 /* Pods */,
+				F4D881A8D50DDB6BAAA51BD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +109,14 @@
 			path = Gazpacho;
 			sourceTree = "<group>";
 		};
+		F4D881A8D50DDB6BAAA51BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19A183EB8D796590653D879 /* libPods-Gazpacho.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D399B071B2DD57E00422F17 /* Build configuration list for PBXNativeTarget "Gazpacho" */;
 			buildPhases = (
+				F5F036378B53C8AAA53FC872 /* Check Pods Manifest.lock */,
 				7D399ADE1B2DD57D00422F17 /* Sources */,
 				7D399ADF1B2DD57D00422F17 /* Frameworks */,
 				7D399AE01B2DD57D00422F17 /* Resources */,
+				4D5A47B30E7B0F067FE4C7E6 /* Copy Pods Resources */,
+				7DBEFE141B89C908000E471F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -162,6 +189,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D5A47B30E7B0F067FE4C7E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gazpacho/Pods-Gazpacho-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DBEFE141B89C908000E471F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\nCODE_SIGN_IDENTITY=\"Developer ID Application: Jamie White\"\n\ncodesign --verbose --force --sign \"$CODE_SIGN_IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"";
+		};
+		F5F036378B53C8AAA53FC872 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D399ADE1B2DD57D00422F17 /* Sources */ = {
@@ -279,6 +352,7 @@
 		};
 		7D399B081B2DD57E00422F17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7397CF3B59EBF1B27EE1125 /* Pods-Gazpacho.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Gazpacho/Gazpacho.entitlements;
@@ -293,6 +367,7 @@
 		};
 		7D399B091B2DD57E00422F17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D633F695A8757198D561E2BC /* Pods-Gazpacho.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Gazpacho/Gazpacho.entitlements;
