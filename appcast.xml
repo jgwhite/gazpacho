@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Gazpacho’s Changelog</title>
+    <link>http://jgwhite.co.uk/gazpacho/appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.0.0</title>
+      <sparkle:releaseNotesLink>
+        http://jgwhite.co.uk/gazpacho/release-notes/1.0.0.md
+      </sparkle:releaseNotesLink>
+      <pubDate>Mon, 24 Aug 2015 10:00:00 +0100</pubDate>
+      <enclosure url="http://files.jgwhite.co.uk/Gazpacho-1.0.0.zip" sparkle:version="1.0.0" length="TODO" type="application/octet-stream" sparkle:dsaSignature="TODO" />
+      <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+    </item>
+  </channel>
+</rss>
