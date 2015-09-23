@@ -8,10 +8,14 @@
     <item>
       <title>Version 1.0.0</title>
       <sparkle:releaseNotesLink>
-        http://jgwhite.co.uk/gazpacho/release-notes/1.0.0.md
+        https://gazpacho-app.s3.amazonaws.com/v1.0.0/release-notes-1.0.0.md
       </sparkle:releaseNotesLink>
-      <pubDate>Mon, 24 Aug 2015 10:00:00 +0100</pubDate>
-      <enclosure url="http://files.jgwhite.co.uk/Gazpacho-1.0.0.zip" sparkle:version="1.0.0" length="TODO" type="application/octet-stream" sparkle:dsaSignature="TODO" />
+      <pubDate>Wed, 23 Sep 2015 15:00:00 +0100</pubDate>
+      <enclosure url="https://gazpacho-app.s3.amazonaws.com/v1.0.0/Gazpacho-1.0.0.zip"
+                 sparkle:version="8"
+                 sparkle:shortVersionString="1.0.0"
+                 length="2940339"
+                 type="application/octet-stream" />
       <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
     </item>
   </channel>
