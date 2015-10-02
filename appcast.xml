@@ -6,6 +6,19 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
+      <title>Version 1.0.1</title>
+      <sparkle:releaseNotesLink>
+        https://gazpacho-app.s3.amazonaws.com/v1.0.1/release-notes-1.0.1.md
+      </sparkle:releaseNotesLink>
+      <pubDate>Fri, 02 Oct 2015 14:00:00 +0100</pubDate>
+      <enclosure url="https://gazpacho-app.s3.amazonaws.com/v1.0.1/Gazpacho-1.0.1.zip"
+                 sparkle:version="9"
+                 sparkle:shortVersionString="1.0.1"
+                 length="2940327"
+                 type="application/octet-stream" />
+      <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+    </item>
+    <item>
       <title>Version 1.0.0</title>
       <sparkle:releaseNotesLink>
         https://gazpacho-app.s3.amazonaws.com/v1.0.0/release-notes-1.0.0.md
